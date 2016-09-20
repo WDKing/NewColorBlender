@@ -94,6 +94,7 @@ public class MainActivity extends Activity {
                         + ", progress: " + progress);
 
                 blendedColorDisplay.setBackgroundColor(blendedColor);
+                blendedColorDisplay.refreshDrawableState();
             } // onProgressChanged
 
             @Override
@@ -188,6 +189,7 @@ public class MainActivity extends Activity {
                 secondColorDisplay.refreshDrawableState();
             }
 
+            blendedColorDisplay.refreshDrawableState();
             Log.i("onActivityResult", "Red: " + redToPrint
                    + ", Green: " + greenToPrint
                    + ", Blue: " + blueToPrint);
